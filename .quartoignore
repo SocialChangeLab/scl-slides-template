@@ -1,3 +1,4 @@
 template.html
 scl-slides-template.Rproj
-*_files
+*_files/
+*_cache/
