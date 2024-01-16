@@ -13,7 +13,11 @@ execute:
   echo: true
 ---
 
-# Setup
+# Getting Started
+
+## Using reveal.js
+
+- https://quarto.org/docs/presentations/revealjs/
 
 ## Load Packages
 
@@ -50,7 +54,7 @@ theme_scl <- function(
 ggplot2::theme_set(theme_grey()) # default
 ```
 
-# Introduction
+# Some Results
 
 ## Plot
 
@@ -62,6 +66,8 @@ ggplot2::theme_set(theme_grey()) # default
 ```{r plot}
 #| echo: false
 #| fig-align: center
+#| fig-width: 11
+#| fig-height: 6
 mpg %>%
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(color = class)) +
