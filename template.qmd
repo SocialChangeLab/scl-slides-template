@@ -1,17 +1,23 @@
 ---
-title: Template Title
-subtitle: Subtitle
-author: Lennart Klein
-date: last-modified
+title: "Title"
+subtitle: "Subtitle"
+author: "Markus Ostarek & Lennart Klein"
+date: today
+# date-format: "MMM D, YYYY"
+institute: "Social Change Lab"
+footer: "[socialchangelab.org/](https://www.socialchangelab.org/)"
 format:
-  scl-html: default
+  scl-revealjs: default
 execute:
-  cache: true
-  freeze: auto
+  # cache: true
+  # freeze: auto
   warning: false
+  echo: true
 ---
 
 # Setup
+
+## Load Packages
 
 ```{r setup}
 #| echo: true
@@ -43,7 +49,7 @@ theme_scl <- function(
       plot.caption = element_text(color = scl_colors["font"], size = 9, hjust = 0)
     )
 }
-# theme_set(theme_grey()) # default
+theme_set(theme_grey()) # default
 ```
 
 # Introduction
@@ -52,9 +58,11 @@ theme_scl <- function(
 
 -   classic `ggplot2` example with custom `theme_scl()` function
 
--   use `paletteer::scale_color_paletteer_d("colorblindr::OkabeIto_black")` for the Okabe-Ito (2008) colour-blind-friendly palette
+
+## Plot
 
 ```{r plot}
+#| echo: false
 mpg %>%
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(color = class)) +

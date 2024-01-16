@@ -1,9 +1,82 @@
-/*-- scss:defaults --*/
-$logo-color: #0F4AB2;
+// https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs
 
-$primary: $logo-color;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-- scss:defaults --*/
+
+// CI Color Logo
+$SCL-blue: #0F4AB2;
+
+// THEME
+// https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables
+
+$font-family-sans-serif: 'Poppins', sans-serif !default;
+$presentation-heading-font: 'Poppins', sans-serif !default;
+$font-family-monospace: 'Source Code Pro', monospace !default;
+
+$link-color: $SCL-blue;
+$presentation-heading-color: $SCL-blue;
+
+// $code-block-bg: $body-bg;
+// $code-color
+
+$light-bg-link-color: $SCL-blue !default;
+$dark-bg-link-color: $SCL-blue !default;
+$light-bg-code-color: $SCL-blue !default;
+
 
 /*-- scss:rules --*/
-h1, h2, h3, h4, h5, h6 {
-  color: $logo-color;
+
+/* Adjust logo size */
+.reveal .slide-logo {
+  // max-width: 300px !important;
+  max-height: 175px !important;
+
+  // default is position fixed
+  bottom: -25px !important;
+  right: 5px !important; // default: 12px
 }
+
+#title-slide .subtitle {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#title-slide .institute {
+  font-weight: 500;
+}
+
+
+.reveal .footer p {
+  // color: var($SCL-blue);
+  font-weight: 300;
+}
+
+
+// font sizes
+
+// .smaller {
+//   font-size: smaller;
+// }
+
+// .medium {
+//   font-size: medium;
+// }
+
+// .large {
+//   font-size: 150%;
+// }
+
+// .larger {
+//   font-size: 250%;
+// }
+
+// .largest {
+//   font-size: 500%;
+// }
