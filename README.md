@@ -1,17 +1,15 @@
-# Social Change Lab: Quarto Report Template
+# Social Change Lab: Quarto Slides Template
 
 ## Installing
 
 ```bash
-quarto use template SocialChangeLab/scl-report-template
+quarto use template SocialChangeLab/scl-slides-template
 ```
 
-
-
-This will install the extension and create a `template.qmd` file that you can use as a starting place for your report.
+This will install the extension and create a `template.qmd` file that you can use as a starting place for your revealjs slides.
 
 ## Example
 
-Here is the source code for a minimal sample document: [template.qmd](template.qmd)
+Here is the source code for the sample slides: [template.qmd](template.qmd)
 
-And the rendered report: [template.html](https://socialchangelab.github.io/scl-report-template/template.html)
+And the rendered slides: [template.html](https://socialchangelab.github.io/scl-report-template/template.html)

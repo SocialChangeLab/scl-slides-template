@@ -6,4 +6,4 @@
 .quarto
 *_cache/
 *_files/
-*.html
+# *.html
