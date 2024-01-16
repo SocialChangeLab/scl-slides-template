@@ -29,6 +29,7 @@ jobs:
             any::knitr
             any::rmarkdown
             any::tidyverse
+            any::paletteer
         
         # https://github.com/quarto-dev/quarto-actions/tree/main/setup
       - name: Set up Quarto

@@ -59,6 +59,7 @@ ggplot2::theme_set(theme_grey()) # default
 -   classic `ggplot2` example with custom `theme_scl()` function
 
 
+
 ## Plot
 
 ```{r plot}
