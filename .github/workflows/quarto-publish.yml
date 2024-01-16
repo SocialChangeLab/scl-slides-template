@@ -7,6 +7,7 @@ on:
     paths:
       - '_extensions/**'
       - '**.qmd'
+      - '**.yml'
 
 name: Render and Publish
 
@@ -24,16 +25,19 @@ jobs:
             any::knitr
             any::rmarkdown
         
+        # https://github.com/quarto-dev/quarto-actions/tree/main/setup
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         # with:
+          # version: SPECIFIC-QUARTO-VERSION-HERE
           # To install LaTeX to build PDF book 
           # tinytex: true 
           # uncomment below and fill to pin a version
-          # version: SPECIFIC-QUARTO-VERSION-HERE
       
       # add software dependencies here
 
+      # https://github.com/quarto-dev/quarto-actions/tree/main/publish#github-pages
+      # -> Notice specific setup!
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:

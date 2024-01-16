@@ -49,7 +49,7 @@ theme_scl <- function(
       plot.caption = element_text(color = scl_colors["font"], size = 9, hjust = 0)
     )
 }
-theme_set(theme_grey()) # default
+ggplot2::theme_set(theme_grey()) # default
 ```
 
 # Introduction
