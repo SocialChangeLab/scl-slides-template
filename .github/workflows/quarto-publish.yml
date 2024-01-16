@@ -1,6 +1,12 @@
+# Renders template.qmd on GitHub Actions and deploys it on GitHub Pages to provide a sample view of the template
+
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-and-excluding-paths
 on:
   push:
     branches: main
+  paths:
+    - '_extensions/**'
+    - '**.qmd'
 
 name: Render and Publish
 
