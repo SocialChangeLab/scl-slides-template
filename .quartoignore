@@ -2,3 +2,4 @@ template.html
 scl-slides-template.Rproj
 *_files/
 *_cache/
+*_freeze/

@@ -1,16 +1,14 @@
 ---
 title: "Title"
 subtitle: "Subtitle"
-author: "Markus Ostarek & Lennart Klein"
+author: "Markus Ostarek"
 date: today
-# date-format: "MMM D, YYYY"
 institute: "Social Change Lab"
-footer: "[socialchangelab.org/](https://www.socialchangelab.org/)"
 format:
   scl-revealjs: default
 execute:
-  # cache: true
-  # freeze: auto
+  cache: true
+  freeze: auto
   warning: false
   echo: true
 ---
@@ -64,6 +62,7 @@ ggplot2::theme_set(theme_grey()) # default
 
 ```{r plot}
 #| echo: false
+#| fig-align: center
 mpg %>%
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(color = class)) +
