@@ -2,10 +2,17 @@
 {
   "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
   "features": {
+    // Quarto CLI installed with tidyverse image
    //  "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
    //   "version": "1", // latest
    //   "installChromium": false, // might need for revealjs, doesn't work for Ubuntu though
    //  "installTinyTex": false
-   // }
+   // },
+  "customizations": {
+    "vscode": {
+      // use extension ID from Marketplace details "identifier"
+      "extensions": ["quarto.quarto"]
+      }
+    }
   }
 }
