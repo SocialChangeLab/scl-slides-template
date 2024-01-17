@@ -44,11 +44,13 @@ contributes:
       # fig-responsive: true
       logo: assets/scl_logo.webp
       slide-number: c
-      code-line-numbers: true
+
+      # https://quarto.org/docs/reference/formats/html.html#code
+      code-line-numbers: false # if true, code-link won't work!
+      code-link: true
       code-overflow: wrap
       code-copy: hover
-      code-link: true
-      # code-tools: true 
+      code-tools: true 
       preview-links: false
       # preload-iframes: true
       theme: [default, scl_custom.scss]
